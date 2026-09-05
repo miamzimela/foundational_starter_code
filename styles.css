@@ -1,29 +1,75 @@
-/* Basic styles with errors and omissions */
+/* ============================================
+   PORTFOLIO WEBSITE STYLES
+   Organised by section: Global > Header/Nav >
+   Sections > Table > Form > Footer
+   ============================================ */
 
+/* --- Global resets and base typography --- */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
-.header {
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #222;
+}
+
+/* --- Header and Navigation --- */
+/* ID selector: there is only ever one page header */
+#site-header {
     background-color: #222;
     color: white;
     padding: 20px;
-    /* Missing: proper alignment */
+    text-align: center;
 }
 
-.header h1 {
+header h1 {
     margin: 0;
 }
 
-/* Navigation styling missing completely */
+/* Descendant selector: targets ul only when it's inside nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
 
+/* Descendant selector: targets a only when inside nav li */
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Pseudo-class: hover effect on nav links */
+nav li a:hover {
+    background-color: #555;
+    border: 2px solid white;
+}
+
+/* Pseudo-class: focus effect for keyboard navigation accessibility */
+nav li a:focus {
+    outline: 3px solid #ffd700;
+}
+
+/* --- Hero section --- */
 .hero {
     padding: 50px;
-    background-color: lightblue;
-    /* Poor colour contrast */
+    margin: 0;
+    background-color: #cfe8f3; /* fixed: darker blue for better contrast */
+    border-bottom: 3px solid #222;
+    text-align: center;
 }
 
 .hero h2 {
@@ -32,34 +78,159 @@ body {
 
 .hero img {
     width: 100%;
-    /* Missing: alt text handled in HTML, but sizing issues here */
+    max-width: 600px;
+    margin-top: 20px;
+    border: 4px solid #222;
 }
 
-/* Missing: Only using 2-3 selector types, need 5+ */
-/* Missing: Pseudo-classes not used */
-/* Missing: Combination selectors not used */
-
-.intro {
+/* --- Intro / background sections --- */
+.intro,
+.background,
+.skills,
+.photo,
+.project {
     padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 }
 
-/* Form styling incomplete */
-form input {
+.photo img {
     display: block;
-    margin: 10px 0;
+    width: 200px;
+    margin: 10px auto;
+    border: 3px solid #222;
+    border-radius: 50%;
 }
 
-/* Missing: Box model demonstration (margin, padding, border) */
-/* Missing: Block vs inline elements styling */
-/* Missing: Text and colour styling variety */
-/* Missing: Table styling */
+/* --- Table styling --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
 
-.footer {
-    background-color: gray;
-    color: white;
-    padding: 20px;
-    /* Wrong alignment */
+th, td {
+    border: 1px solid #999;
+    padding: 10px 15px;
     text-align: left;
 }
 
-/* Code quality issues: inconsistent spacing, poor naming, no comments */
+thead {
+    background-color: #222;
+    color: white;
+}
+
+/* Pseudo-class: alternating row colours for readability */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f0ff;
+}
+
+/* --- Projects page --- */
+.project img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #222;
+}
+
+/* --- Contact form styling --- */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    padding-bottom: 5px;
+}
+
+.form-group label,
+fieldset legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Combination selector: text/email inputs, textarea, and select share sizing */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Pseudo-class: focus state gives clear visual feedback while typing */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #2266aa;
+}
+
+fieldset {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 6px;
+}
+
+fieldset label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+button[type="submit"] {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Pseudo-class: hover effect on submit button */
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* --- Footer --- */
+/* ID selector paired with descendant selector below */
+#site-footer {
+    background-color: #333; /* fixed: darker grey meets 4.5:1 contrast with white text */
+    color: white;
+    padding: 20px;
+    text-align: center; /* fixed: was left-aligned */
+}
+
+#site-footer p {
+    margin: 0;
+}
