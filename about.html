@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio - About</title>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
+    <header id="site-header">
+        <h1>mia.</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -20,9 +23,16 @@
     </header>
 
     <main>
-        <section class="background">
-            <h2>My Background</h2>
-            <p>I have been working in web development for several years.</p>
+        <!-- Two-column intro: photo + bio, no wrapper divs needed -->
+        <section class="about-hero">
+            <figure class="about-photo">
+                <img src="images/profile.jpg" alt="Portrait photo of Mia Mzimela">
+            </figure>
+            <section class="about-text">
+                <h2>Turning ideas into <em>real things</em></h2>
+                <p>I'm Mia — a developer based in Johannesburg, currently training in front-end and full-stack development. I like the process of starting with a blank page and ending up with something people can actually use.</p>
+                <p>Alongside my coursework, I've designed and built sites for real clients, including a nail studio and a handmade knitwear shop — work that's taught me as much about listening to what people need as it has about code.</p>
+            </section>
         </section>
 
         <section class="skills">
@@ -52,18 +62,31 @@
                         <td>Intermediate</td>
                         <td>2</td>
                     </tr>
+                    <tr>
+                        <td>Responsive &amp; UI Design</td>
+                        <td>Advanced</td>
+                        <td>2</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
-
-        <section class="photo">
-            <h3>My Photo</h3>
-            <img src="images/profile.jpg" alt="Portrait photo of the portfolio owner smiling at the camera">
-        </section>
     </main>
 
-    <footer>
-        <p>Contact me at email@example.com</p>
+    <footer id="site-footer">
+        <div class="footer-columns">
+            <div class="footer-brand">
+                <p class="footer-logo">Mia Mzimela.</p>
+                <p class="footer-tagline">Building thoughtful, functional web experiences.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="footer-contact">Email: <a href="mailto:mia.mzimela@umuzi.org">mia.mzimela@umuzi.org</a></p>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Mia Mzimela. All rights reserved.</p>
     </footer>
 </body>
 </html>
