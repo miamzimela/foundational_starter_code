@@ -43,9 +43,12 @@ Every image has descriptive alt text, every form input has an associated `<label
 ## Screenshots
 
 **Home page**
+
 ![alt text](<Screenshot (1149).png>)
+
 **About page**
-![About page](screenshots/about.png)
+
+![alt text](<Screenshot (1152).png>)
 
 **Projects page**
 ![Projects page](screenshots/projects.png)
