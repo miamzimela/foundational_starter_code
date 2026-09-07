@@ -3,73 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio - Contact</title>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
+    <header id="site-header">
+        <h1>mia.</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- Two-column layout: intro/info on the left, form on the right - no wrapper div needed, flex applied directly to main -->
+    <main class="contact-layout">
+        <section class="contact-intro">
+            <p class="eyebrow">Contact Me</p>
+            <h2>Let's Talk<span class="accent-dot">.</span></h2>
+            <p>Got a project in mind? A question? Or just want to say hi? My inbox is always open.</p>
+            <p class="contact-email-label">Email</p>
+            <p class="contact-email"><a href="mailto:mia.mzimela@umuzi.org">mia.mzimela@umuzi.org</a></p>
+        </section>
+
         <section class="contact-form">
-            <h2>Get In Touch</h2>
-
             <form action="#" method="post">
-                <!-- Text input with minlength validation -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" minlength="2" required>
-                </div>
+                <!-- Each field uses a <p> wrapper instead of a div - keeps us well under the non-semantic div limit -->
+                <p class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" minlength="2" placeholder="Your name" required>
+                </p>
 
-                <!-- Email input with built-in browser validation -->
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                <p class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </p>
 
-                <!-- Dropdown select input -->
-                <div class="form-group">
-                    <label for="reason">Reason for contact:</label>
+                <p class="form-group">
+                    <label for="reason">Reason for contact</label>
                     <select id="reason" name="reason" required>
                         <option value="">-- Please choose --</option>
                         <option value="job">Job Opportunity</option>
                         <option value="freelance">Freelance Project</option>
                         <option value="general">General Enquiry</option>
                     </select>
-                </div>
+                </p>
 
-                <!-- Radio button group -->
+                <!-- Fieldset is already semantic, so no extra wrapper needed for the radio group -->
                 <fieldset class="form-group">
-                    <legend>Preferred contact method:</legend>
-                    <input type="radio" id="contact-email" name="contact-method" value="email" checked>
-                    <label for="contact-email">Email</label>
-
-                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                    <label for="contact-phone">Phone</label>
+                    <legend>Preferred contact method</legend>
+                    <span class="radio-option">
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label for="contact-email">Email</label>
+                    </span>
+                    <span class="radio-option">
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </span>
                 </fieldset>
 
-                <!-- Textarea with minlength validation -->
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" minlength="10" required></textarea>
-                </div>
+                <p class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" minlength="10" placeholder="Tell me about your project..." required></textarea>
+                </p>
 
-                <button type="submit">Send</button>
+                <button type="submit">Send Message <span aria-hidden="true">&#10148;</span></button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>Contact me at email@example.com</p>
+    <footer id="site-footer">
+        <div class="footer-columns">
+            <div class="footer-brand">
+                <p class="footer-logo">Mia Mzimela.</p>
+                <p class="footer-tagline">Building thoughtful, functional web experiences.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="footer-contact">Email: <a href="mailto:mia.mzimela@umuzi.org">mia.mzimela@umuzi.org</a></p>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Mia Mzimela. All rights reserved.</p>
     </footer>
 </body>
 </html>
