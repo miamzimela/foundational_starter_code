@@ -44,23 +44,23 @@ Every image has descriptive alt text, every form input has an associated `<label
 
 **Home page**
 
-![alt text](<Screenshot (1149).png>)
+![alt text](screenshots/homepage.png)
 
-![alt text](<Screenshot (1166).png>)
+![alt text](screenshots/homepage2.png)
 
 **About page**
 
-![alt text](<Screenshot (1152).png>)
+![alt text](screenshots/aboutpage.png)
 
 **Projects page**
 
-![alt text](<Screenshot (1153).png>)
+![alt text](screenshots/projectspage1.png)
 
-![alt text](<Screenshot (1167).png>)
+![alt text](screenshots/projectspage2.png)
 
 **Contact page with form**
 
-![alt text](<Screenshot (1154).png>)
+![alt text](screenshots/contactpage.png)
 
 ## Reflection
 
