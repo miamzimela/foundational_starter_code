@@ -55,7 +55,8 @@ Every image has descriptive alt text, every form input has an associated `<label
 ![alt text](<Screenshot (1153).png>)
 
 **Contact page with form**
-![Contact page](screenshots/contact.png)
+
+![alt text](<Screenshot (1154).png>)
 
 ## Reflection
 
