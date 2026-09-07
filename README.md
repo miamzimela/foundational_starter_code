@@ -1,6 +1,6 @@
 # Mia Mzimela — Portfolio Website
 
-A four-page personal portfolio site (Home, About, Projects, Contact) built by debugging and rebuilding a starter codebase that was roughly 70% complete. This was a capstone project for the Umuzi/NCBA web development programme, focused on semantic HTML, accessible forms, and CSS fundamentals.
+A four-page personal portfolio site (Home, About, Projects, Contact) built by debugging and rebuilding a starter codebase that was roughly 70% complete. This capstone project focuses on semantic HTML, accessible forms, and CSS fundamentals.
 
 ## Overview
 
