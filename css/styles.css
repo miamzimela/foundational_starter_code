@@ -422,6 +422,7 @@ fieldset legend {
 /* rounded input boxes - wanted these to feel more like a real product form, not a boring html form */
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea,
 select {
     width: 100%;
