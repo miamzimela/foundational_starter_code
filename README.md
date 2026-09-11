@@ -62,6 +62,16 @@ Every image has descriptive alt text, every form input has an associated `<label
 
 ![alt text](screenshots/contactpage.png)
 
+**Navigation Bar, Footer, Skills Table and Contact Form**
+
+![alt text](<Navigation Bar.png>)
+
+![alt text](<Skills Table.png>)
+
+![alt text](<Contact Form.png>)
+
+![alt text](Footer.png)
+
 ## Reflection
 
 The trickiest part wasn't the individual bugs — it was catching what wasn't obvious at first glance, like the non-semantic div limit on the contact form, or a colour combination that looked fine but failed contrast testing. Running the HTML and CSS through validators after every major change caught things I'd have otherwise missed. Rebuilding the contact form with `<p>` and `<fieldset>` instead of `<div>` wrappers was a good reminder that accessibility and code-quality requirements often point to the same fix.
