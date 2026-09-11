@@ -64,13 +64,13 @@ Every image has descriptive alt text, every form input has an associated `<label
 
 **Navigation Bar, Footer, Skills Table and Contact Form**
 
-![alt text](<Navigation Bar.png>)
+![alt text](<screenshots/Navigation Bar.png>)
 
-![alt text](<Skills Table.png>)
+![alt text](<screenshots/Skills Table.png>)
 
-![alt text](<Contact Form.png>)
+![alt text](<screenshots/Contact Form.png>)
 
-![alt text](Footer.png)
+![alt text](screenshots/Footer.png)
 
 ## Reflection
 
