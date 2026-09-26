@@ -232,6 +232,13 @@ nav li a[aria-current="page"] {
     padding: 6px;
 }
 
+.about-photo figcaption {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #8f8a82;
+}
+
 .about-text {
     flex: 1 1 400px;
 }
@@ -326,12 +333,24 @@ tbody tr:hover {
     box-shadow: 18px 0 0 #e0b04a, 36px 0 0 #5cb670;
 }
 
+.project figure {
+    margin: 0;
+}
+
 .project img {
     width: 100%;
     display: block;
     margin: 0;
     border: none;
     border-radius: 0;
+}
+
+.project figcaption {
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #8f8a82;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #262626;
 }
 
 .project p {
