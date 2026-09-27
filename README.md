@@ -66,7 +66,7 @@ Every image has descriptive alt text, every form input has an associated `<label
 
 ![alt text](<screenshots/Navigation Bar.png>)
 
-![alt text](<screenshots/Skills Table.png>)
+![alt text](screenshots/SkillsTable.png)
 
 ![alt text](<screenshots/Contact Form.png>)
 
