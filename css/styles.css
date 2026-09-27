@@ -284,6 +284,17 @@ table {
     overflow: hidden;
 }
 
+caption {
+    text-align: left;
+    color: #c9a877;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Work Sans', Arial, sans-serif;
+}
+
 th, td {
     border: 1px solid #262626;
     padding: 14px 18px;
